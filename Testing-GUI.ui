@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>748</width>
-    <height>575</height>
+    <width>701</width>
+    <height>648</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,24 +18,44 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QMainWindow {
-	background-color: qlineargradient(spread:pad, x1:0.00537634, y1:0.0511364, x2:0.67157, y2:0.675682, stop:0 rgba(205, 228, 224, 255), stop:1 rgba(241, 255, 254, 255));
-	border-radius: 25px;
+	background-color: qlineargradient(spread:pad, x1:0.405, y1:1, x2:0.657553, y2:0.297, stop:0 rgba(232, 232, 228, 255), stop:1 rgba(255, 255, 255, 255));
+	border-radius: 50px;
 }
 
-
 QLineEdit {
+	border: 1px solid rgb(216, 226, 220);
+		border-radius: 12px;	
+		padding: 6px;
+
+}
+
+QLineEdit:hover {
+	border-color: #95B1A0;
+	box-shadow: 0 0 10px #95B1A0;
+}
+QLineEdit:focus {
+	border-color: #95B1A0;
+	box-shadow: 0 0 10px #95B1A0;
+}
+
+QPushButton {
+	background-color: #ECE4DB;
 	border-radius: 12px;
-	padding: 6px;
+	padding: 8px;
+}
+
+QPushButton:hover {
+	background-color: #E3D7CA;
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>10</y>
-      <width>621</width>
-      <height>131</height>
+      <x>70</x>
+      <y>40</y>
+      <width>531</width>
+      <height>171</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -90,7 +110,7 @@ QLineEdit {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>748</width>
+     <width>701</width>
      <height>21</height>
     </rect>
    </property>
