@@ -1,0 +1,46 @@
+/*
+"Color palette:
+"Main: #F2F2F2
+"Main-shade: #A6A6A6
+"Accent-base: #F29F05
+"Accent-light: #F2A341
+"Accent-shade: #D9863D
+"Text: #545454
+*/
+
+QMainWindow {
+	color: #545454;
+	background-color: #F2F2F2;
+	border-radius: 50px;
+}
+
+QLineEdit {
+	border: 1px solid #A6A6A6;
+	border-radius: 16px;	
+	padding: 6px;
+	font: 12pt "Calibri Light";
+}
+
+QLineEdit:hover {
+	border-color: #D9863D;
+}
+QLineEdit:focus {
+	border-color: #D9863D;
+}
+
+QPushButton {
+	background-color: #F29F05;
+	border-radius: 16px;
+	padding: 8px;
+	font: 12pt "Calibri Light";
+	color: #3D3D3D;
+}
+
+QPushButton:hover {
+	background-color: #F2A341;
+}
+
+QLabel {
+	color: #3D3D3D;
+	font: 12pt "Calibri Light";
+}
