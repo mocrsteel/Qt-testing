@@ -96,162 +96,152 @@ QLabel {
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>-3</y>
-      <width>701</width>
-      <height>281</height>
+      <x>10</x>
+      <y>10</y>
+      <width>704</width>
+      <height>304</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="ContentVertical">
+    <layout class="QGridLayout" name="gridLayout">
      <property name="sizeConstraint">
       <enum>QLayout::SetDefaultConstraint</enum>
      </property>
      <property name="leftMargin">
-      <number>60</number>
+      <number>20</number>
      </property>
      <property name="topMargin">
-      <number>50</number>
+      <number>20</number>
      </property>
      <property name="rightMargin">
-      <number>60</number>
+      <number>20</number>
      </property>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <property name="spacing">
-        <number>12</number>
+     <property name="bottomMargin">
+      <number>20</number>
+     </property>
+     <property name="horizontalSpacing">
+      <number>20</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>40</number>
+     </property>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="lineEditOutputFileName">
+       <property name="placeholderText">
+        <string>Please enter the desired file name</string>
        </property>
-       <item>
-        <widget class="QLabel" name="label">
-         <property name="text">
-          <string>Currently selected input file: </string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="lblSelectedFile">
-         <property name="text">
-          <string>No file selected...</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="btnSelectFile">
-         <property name="text">
-          <string>Select File</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
+      </widget>
      </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
-       <item>
-        <widget class="QLabel" name="label_4">
-         <property name="text">
-          <string>Current output folder:</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="lblOutputFolder">
-         <property name="text">
-          <string>output/folder/from/config</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="btnSelectFolder">
-         <property name="text">
-          <string>Select Output Folder</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Current output filename:</string>
+       </property>
+      </widget>
      </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item>
-        <widget class="QLabel" name="label_3">
-         <property name="text">
-          <string>File Output file name: </string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEditOutputFileName">
-         <property name="placeholderText">
-          <string>Please enter the desired file name</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Currently selected input file: </string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="btnSelectFolder">
+       <property name="text">
+        <string>Select Output Folder</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="lblSelectedFile">
+       <property name="text">
+        <string>No file selected...</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="btnSelectFile">
+       <property name="text">
+        <string>Select File</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Report status: </string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="lblReportStatus">
+       <property name="text">
+        <string>Input file not loaded.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="lblOutputFolder">
+       <property name="text">
+        <string>output/folder/from/config</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Current output folder:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QPushButton" name="btnConfirmFileName">
+       <property name="text">
+        <string>Confirm</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="verticalLayoutWidget_2">
+   <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>-1</x>
-      <y>280</y>
-      <width>701</width>
-      <height>121</height>
+      <x>10</x>
+      <y>349</y>
+      <width>681</width>
+      <height>51</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>40</number>
+     </property>
+     <property name="leftMargin">
+      <number>100</number>
+     </property>
+     <property name="rightMargin">
+      <number>100</number>
+     </property>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_4">
-       <property name="leftMargin">
-        <number>100</number>
+      <widget class="QPushButton" name="btnLoadFile">
+       <property name="text">
+        <string>Load File</string>
        </property>
-       <property name="rightMargin">
-        <number>100</number>
-       </property>
-       <item alignment="Qt::AlignLeft">
-        <widget class="QLabel" name="label_6">
-         <property name="text">
-          <string>Report status: </string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="lblReportStatus">
-         <property name="text">
-          <string>Input file not loaded.</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
+      </widget>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="ButtonsHorizontal">
-       <property name="leftMargin">
-        <number>100</number>
+      <widget class="QPushButton" name="btnPreviewOutput">
+       <property name="text">
+        <string>Preview output</string>
        </property>
-       <property name="rightMargin">
-        <number>100</number>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnSaveReport">
+       <property name="text">
+        <string>Save Report</string>
        </property>
-       <item>
-        <widget class="QPushButton" name="btnLoadFile">
-         <property name="text">
-          <string>Load File</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="btnPreviewOutput">
-         <property name="text">
-          <string>Preview output</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="btnSaveReport">
-         <property name="text">
-          <string>Save Report</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -262,7 +252,7 @@ QLabel {
      <x>0</x>
      <y>0</y>
      <width>700</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuProgram">
